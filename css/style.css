@@ -1,71 +1,107 @@
-@import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
-
-body {
-font-family: 'Hind', sans-serif;
-margin: 0;
-background: #1C86EE;
-height: auto;
-}
-
-header {
+* {
     box-sizing: border-box;
-    height: 55px;
-    background-color: #007bff;
-    font-size: 1rem;
-    text-align: center;
-    color: white;
 }
-
-.imagewrap {
-    display: flex;
-    padding-top: 1.5rem;
-    justify-content: center;
-    align-content: center;
-}
-
-.img {
-    align-self: center;
-}
-
-.info-container {
-    display: inline-block;
-    text-align: center;
-    padding-top: 3rem;
-    width: 100%;
-}
-
-.info h1 {
-    font-weight: 400;
-    font-size: 2.5rem;
+                     
+body {
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: "Hind", sans-serif;
     margin: 0;
-    color: #515151;
+    background: rgb(250, 246, 241);
+    min-height: 100%;
 }
 
-.info h2 {
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: #848484;
+.resumeContainer {
+    /*display: flex;*/
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
 }
+
+.leftPanel {
+    flex-direction: column;
+    text-align: center;
+    background-color: #008b8b;
+    height: auto;
+}
+
+/*.imagewrap {
+display: flex;
+flex-direction: row;
+padding-top: 2rem;
+align-content: center;
+max-width: 70%
+}*/
+                     
+img {
+    width: 45%;
+    height: 45%;
+    padding-top: 2rem;
+}
+
+.name p {
+    display: block;
+    padding-top: 1rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.contact h2 {
+    display: block;
+    font-weight: 200;
+    font-size: 1.2rem;
+    margin: 0 auto;
+}
+
 
 .info-links {
-    display: inline-block;
-    font-size: 1.5rem;
-    padding-top: 2.5rem;
-    width: 100%;
-    margin: 0;
+display: inline-block;
+font-size: 1.2rem;
+padding-top: 1.5rem;
+margin-top: 1rem;
+width: 100%;
+margin: 0;
+line-height: 150%;
+}
+
+.info-links a {
+color: black;
 }
 
 .elevator {
     display: flex;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 0 auto;
     margin-top: 1.5rem;
-    border: 2px solid #f2f2f2;
+    margin-bottom: 1.5rem;
+    /*border: 2px solid rgb(250, 246, 241);*/
+    border: 2px solid red;
     width: 85%;
     padding: 10px;
 }
 
-.education-wrap {
+li {
+    line-height: 75%;
+}
+
+.contentInfo {
+    flex-direction: row;
+    text-align: center;
+    width: 60%;
+    height: 1000px;
+
+}
+
+.img {
+    align-self: center;
+    width: 150px;
+    height: 150px;
+}
+                     
+                    
+/*.education-wrap {
     display: flex;
     margin-top: 2.5rem;
     align-items: center;
@@ -75,11 +111,11 @@ header {
 
 .education {
     display: flex;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     background-color: #C6E2FF;
-}
+}*/
 
- .button-wrap {
+.button-wrap {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,6 +129,113 @@ header {
 .btn btn-primary{
     display: flex;
     text-align: center;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    padding-left: 40px;
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+                     
+@media screen and (max-width: 600px) {
+.resumecontainer {
+        flex-direction: column;
+        width: 70%;
+        margin: 0 auto;
+        justify-content: center;
+        padding: 0 10px 10px 10px;
+    }
+
+    .leftPanel {
+        flex-direction: column;
+        text-align: center;
+        background-color: #008b8b;
+        height: 500px;
+        width: 35%;
+        padding-bottom: 20px;
+    }
+
+.contentInfo {
+    flex-direction: row;
+    text-align: center;
+    background-color: yellow;
+}
+
+.elevator {
+    flex-direction: row;
+    text-align: center;
+    /*width: 70%;
+    padding: 5px;
+    font-size: 10px;*/
+}
+
+
+.education {
+    flex-direction: row;
+    text-align: center;
+}
+
+p {
+    font-weight: 400px;
+    font-size: 35px;
+}
+
+ul {
+display: flex; 
+padding-inline-start: 20px;
+}
+                         
+/*.imagewrap {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+    align-content: center;
+    }
+
+img {
+    align-self: center;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+info-container {
+    max-width: 30%;
+}
+
+.name p {
+padding-top: 1.5rem;
+font-weight: 300;
+font-size: 1.2rem;  
+}
+
+.contact h2 {
+font-weight: 250;
+font-size: 1rem;
+}
+
+.elevator {
+display: flex;
+font-size: 1rem;
+margin: 0 auto;
+margin-top: 1.5rem;
+border: 2px solid #f2f2f2;
+}*/
+}
