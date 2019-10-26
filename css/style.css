@@ -1,59 +1,54 @@
 * {
     box-sizing: border-box;
 }
-                     
+
 body {
+    margin: auto;
+    background-color: #EFDECD;
+    /*background: rgb(250, 246, 241);
     min-height: 100vh;
     flex-direction: column;
     font-family: "Hind", sans-serif;
     margin: 0;
-    background: rgb(250, 246, 241);
-    min-height: 100%;
+    
+    min-height: 100%;*/
 }
 
-.resumeContainer {
-    flex-direction: row;
+.container-fluid resume {
     height: auto;
-    /*justify-content: center;
-    align-items: center;*/
 }
+
 
 .panel {
-    flex-direction: column;
+    text-align: center;
+    background-color: #EFDECD;
+    /*flex-direction: column;
+    border: 3px solid red;
     text-align: center;
     background-color: #EFDECD;
     width: auto;
-    padding-bottom: .8rem;
+    padding-bottom: .8rem;*/
 }
 
 img {
-    width: 250px;
-    height: 250px;
+    /*width: 250px;
+    height: 250px;*/
     padding-top: 2rem;
 }
 
-.name p1 {
-    display: block;
-    padding-top: 1rem;
-    font-weight: 500;
-    font-size: 1.2rem;
-    margin: 0;
-}
 
-.contact h2 {
-    display: block;
-    font-weight: 400;
-    font-size: 1.2rem;
-    margin: 0 auto;
+.info {
+    padding-top: 1rem;
 }
 
 .info-links {
-    display: inline-block;
+    display: block;
+    text-decoration-line: underline;
     font-size: 1.1rem;
-    padding-top: 1.5rem;
-    margin-top: 1rem;
-    width: 100%;
-    line-height: 150%;
+    padding: 1px 0 10px 0;
+    /*margin-top: 1rem;*/
+    line-height: 160%;
+    /*text-align: center;*/
 }
 
 .info-links a {
@@ -61,42 +56,41 @@ img {
 }
 
 .elevator {
-    display: flex;
+    display: block;
     font-size: 1rem;
-    margin: 1.5rem  auto;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    /*border: 3px solid #EFDECD;*/
-    border: 3px solid black;
-    width: 85%;
-    padding: 10px;
-    justify-self: left;
+    padding: 1.2rem;
+    text-align: left;
+    border: 1px solid black;
 }
 
-h5 {
-    padding-left: 41px;
+.education {
+    padding-top: 2rem;
+
 }
 
 ol {
-/*padding-left: 20px;*/
-    margin-top: .5rem;
+    padding-left: 0;
+    margin-top: 3rem;
 }
-
 
 table {
-    width: 80%;
+    width: 100%;
     /*justify-content: center;*/
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
- 
-td, th {
-    border: 2px solid #dddddd;
+
+td,
+th {
+    border: 1px solid black;
     /*text-align: left;*/
 }
-    
-tr:nth-child(even) {
-    background-color: #dddddd;
+
+tr:nth-child(odd) {
+    background-color: #EFDECD;
+}
+
+a.btn.btn primary {
+    background-color: #EFDECD;
 }
 
 .button-wrap {
@@ -119,38 +113,34 @@ tr:nth-child(even) {
     width: 85%;
 }
 
-.
-.techskills {
-    float: right;
-    width: 50%;
-    justify-content: flex-start;
-    background-color: yellow;
+
+
+
+/*   MEDIA QUERIES  
+
+@media (max-width: 575px) {
+    
+img {
+    width: 75%;
+    height: 75%;
+    padding-top: 2rem;
 }
 
-/*   MEDIA QUERIES  */
+.info {
+    display: left;
+}*/
 
-@media (min-width: 577px) and (max-width: 991.98px) {
-
-.resumeContainer {
-    flex-direction: column;
+@media (min-width: 768px) and (max-width: 991.98px) {
+.container-fluid {
     height: auto;
-    width: 100%;
-    padding-left: .5rem;
+    width: auto;
 }
 
 .panel {
-    float: left;
-    text-align: center;
-    background-color: red;
-    width: 49%;
-    padding-bottom: .8rem;
+    flex-direction: column;
 }
-
-rightpanel {
-    float: right;
-    background-color: green;
-}
-/*.elevator {
+   
+.elevator {
     flex-direction: row;
     font-size: 1rem;
     margin: .3rem;
@@ -158,12 +148,9 @@ rightpanel {
     margin-bottom: 1.5rem;
     border: 3px solid #EFDECD;
     padding-left: .2rem;
-}*/
-
-.education {
-    visibility: hidden;
 }
 
-}
+.panel2 {
+    flex-direction: column;
 }
 }

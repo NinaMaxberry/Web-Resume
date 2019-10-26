@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!---<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette&display=swap">
 </head>
@@ -17,99 +17,97 @@
 
 <body>
 
-    <div class="resumeContainer">
-        <div class="panel"><!----Panel Container-->
-            <a class="imagewrap">
-                <!----<img src="image/Nina Black and White (2).jpg"></img>-->
-                <img src="image\20171205_175106 (2).jpg" alt="picture of Nina"></img></a>
+    <div class="container-fluid">  <!---Main Container-->
+        <div class="row justify-content-center panel">  <!----Panel Container-->
+            <div class ="col-md-5">
+                <div class ="col-md image"> 
+                    <img src="image\Nina.jpg" width="200" height="175" alt="picture of Nina"></img>
+                </div> <!---image-->
 
-        <div class="name">
-            <p1>Nina R. Maxberry</p1>
-        </div>
+                <div class="col-md info">
+                    <h5>Nina R. Maxberry</h5>
+                    <h6>Louisville, KY</h6>
+                </div> <!--info--->
 
-        <div class="contact">
-            <h2>Louisville, KY</h2>
-            <!----<h2>703-338-7719</h2>-->
-        </div>
+                <div class="col-md info-links">
+                    <a href= "https://github.com/NinaMaxberry">Visit My Github Repository</a><br>
+                    <a href= "https://www.linkedin.com/in/ninamaxberry">Visit My Linkedin Account</a><br>
+                    <a href= "mailto:nmaxberry@gmail.com?subject=Interview Request ">Email Me</a>
+                </div> <!--info links--->
 
-        <div class="info-links">
-            <a href=https://github.com/NinaMaxberry>Visit My Github Repository</a><br>
-            <a href=https://www.linkedin.com/in/ninamaxberry>Visit My Linkedin Account</a><br>
-            <a href="mailto:nmaxberry@gmail.com?subject=Interview Request">Email Me</a>
-        </div>
+                <div class="col-md elevator">
+            Detailed, results driven and customer focused professional. Projects include: data analysis to review efficency and creating best practices resulting in
+            15% cost savings; reviewing competitor analysis to discover their weaknesses and how to promote our strengths.<br> My introduction to Front End (HTML, CSS, JavaScript, Bootstrap) and Back end (Python/SQL) et al has empowered
+            me to see "what Ismidn 't see". Specifically, I lam looking forward to leveraging my strengths and passion in relationship building, negotiation and project planning implementations.
+                </div>  <!----Elevator-->
+            </div>  <!--class col-->
+        </div> <!---Panel Container-->
 
-      
+        <div class = "row panel2">
+            <div class = "col-md-8">
+                <div class="col-md education">
+                    <h5>Education</h5>
+                <ol>
+                    <li TYPE="none"></li>
+                        <ul style="list-style-type:none; padding-left: 15px">
+                    <li><strong>Code Louisville</strong>
+                        <p>Front End Web Development: HTML, CSS, JavaScript, Bootstrap</p>
+                        <p>Back End: Python</p>
+                        <p>Database: SQL</p>
+                    </li>
 
-    
-        <div class="elevator">
-        Detailed and results driven professional (including serving as a government contractor) with 10+ years of experience leading teams (internally and externally). Projects include: data analysis to review efficency and creating best practices resulting in 15% cost savings; reviewing competitor analysis to discover their weaknesses and how to promote our strengths.<br>
-        My introduction to Front End (HTML, CSS, JavaScript, Bootstrap) and Back end (Python/SQL) et al has empowered me to see "what I didn't see".  Specifically, I lam looking forward to leveraging my strengths and passion in relationship building, negotiation and project planning implementations.
-        </div><!----Elevator-->
-    </div><!--Panel--> 
+                    <li><strong>JCTC</strong>
+                        <p>Computational Thinking<br>
+                        Capstone Project</p>
+                    </li>
 
-        <div class="education">
-         <h5>Education</h5>          
-          <ol>
-              <li TYPE="none"></li>
-              <ul style="list-style-type:none;">
-              <li><strong>Code Louisville</strong>
-              <p>Front End Web Development: HTML, CSS, JavaScript, Bootstrap</p>
-              <p>Back End: Python</p>
-              <p>Database: SQL</p>
-              
-                            </li>
-
-                            <li><strong>JCTC</strong>
-                                <p>Computational Thinking<br></p>
-                            </li>
-
-                            <li><strong>National Louis University</strong></li>
+                    <li><strong>National Louis University</strong></p>
+                    </li>
                         </ul>
-                    </ol>
-                </div>
-            </div>
-      
+                </ol>
+                </div> <!---col education-->
+                 
+        <table>
+                </div class="col-md table">
+                <th><h5>Professional Highlights</h5></th>
+                
+                <tr>
+                    <td>Utilized competitive intelleligence resulting in client costs savings up to 60%.</td>
+                </tr>
 
+                <tr>
+                    <td>Analyzed current business processes to optimize workflows while establishing best practices.</td>
+                </tr>
+
+                <tr>
+                    <td>Collaborator between all stakeholders (internally and externally).</td>
+                </tr>
+
+                <tr>
+                    <td>Project manager in planning, deployment and maintenance of installation processes.</td>
+                </tr>
+
+            </table>
+                </div> <!--table class-->
+            </div> <!---col md 6-->
             
-
-
-<h5>Professional Highlights</h5>
-
-<table class="center">
-
-    <tr>
-        <td>Utilized competitive intelleligence resulting in client costs savings up to 60%.</td></tr>
-
-    <tr>
-        <td>Analyzed current business processes to optimize workflows while establishing best practices.</td></tr>
-
-    <tr>
-      <td>Collaborator between all stakeholders (internally and externally).</td></tr>
-
-    <tr>
-      <td>Project manager in planning, deployment and maintenance of installation processes.</td>
-    </tr>
+        </div> <!---panel 2-->
         
-</table>
-
-  <div class="button-wrap" id="btn">
-          <button type="button"><a class="btn btn-primary" href="resume/IT4.docx" role="button">Download Resume</a></button>
-  </div>
-
-</div>
-  
-<div class="funline">
-  <p>This resume was brought to you by ME - a fun loving human (my pronoun is she/her) who works hard to make life easier for all.  I am a dedicated team player, love to read, play match three computer games, always curious and I have survived this far without becoming addicted to coffee!</p>
-</div>
- 
     </div><!---resumeContainer-->
 
-<div class="rightpanel">  <!---Right panel on large screen-->
-<div class="techSkills"> <!-----buttons for noting tech skills-->
-    <h3>Tech Skills</h3>
-    <button type="button" class="btn btn-primary">HTML</button>
-    <button type="button" class="btn btn-seconday">CSS</button>
-</div> <!--Tech Skills Wrapper-->
-</div>  <!---Right panel-->
-</body>
-    </html
+        <div class="button-wrap" id="btn">
+            <button type="button"><a class="btn btn-primary" href="resume/IT4.docx" role="button">Download Resume</a></button>
+        </div>
+
+    </div>
+
+    <div class="funline">
+        <p>This resume was brought to you by ME - a fun loving human (my pronoun is she/her) who works hard to make life easier for all. I am a dedicated team player, love to read, play match three computer games, always curious and I have survived life this
+            far without becoming addicted to coffee!</p>
+    </div>
+
+
+
+    </body>
+
+</html>
