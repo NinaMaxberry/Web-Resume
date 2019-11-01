@@ -4,14 +4,7 @@
 
 body {
     margin: auto;
-    background-color: #EFDECD;
-    /*background: rgb(250, 246, 241);
-    min-height: 100vh;
-    flex-direction: column;
-    font-family: "Hind", sans-serif;
-    margin: 0;
-    
-    min-height: 100%;*/
+    /*background-color: #EFDECD;*/
 }
 
 .container-fluid resume {
@@ -21,8 +14,8 @@ body {
 
 .panel {
     text-align: center;
-    background-color: #EFDECD;
-    /*flex-direction: column;
+    /*background-color: #EFDECD;
+    flex-direction: column;
     border: 3px solid red;
     text-align: center;
     background-color: #EFDECD;
@@ -58,13 +51,26 @@ img {
 .elevator {
     display: block;
     font-size: 1rem;
-    padding: 1.2rem;
+    padding: 18px;
     text-align: left;
     border: 1px solid black;
 }
 
+.ele-list {
+    list-style-type: none;
+    text-align: left;
+}
+
+.buttons-resume {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .education {
     padding-top: 2rem;
+    text-align: left;
 
 }
 
@@ -89,8 +95,12 @@ tr:nth-child(odd) {
     background-color: #EFDECD;
 }
 
-a.btn.btn primary {
+.btn btn-default {
+    color: black;
     background-color: #EFDECD;
+    border-color: black;
+   /* background-color: #EFDECD;*/
+    /*.btn-primary{color:#fff;background-color:teal;border-color:#005a5a}*/
 }
 
 .button-wrap {
@@ -109,47 +119,47 @@ a.btn.btn primary {
     margin: 0 auto;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    font-family: "Courgette", cursive;
+    font-family: 'Roboto', sans-serif;
     width: 85%;
 }
 
 
 
 
-/*   MEDIA QUERIES  
+/*   MEDIA QUERIES  */
 
-@media (max-width: 575px) {
-    
-img {
-    width: 75%;
-    height: 75%;
-    padding-top: 2rem;
+@media (max-width: 765px) {
+    .panel {
+        background-color: #EFDECD;
+    }
 }
 
-.info {
-    display: left;
-}*/
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+
+@media (min-width: 768px) and (max-width: 1500px) {
 .container-fluid {
     height: auto;
-}
-
-.panel {
-    flex-direction: column;
 }
    
 .elevator {
     flex-direction: row;
     font-size: 1rem;
-    margin: .3rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     border: 3px solid #EFDECD;
     padding-left: .2rem;
 }
 
-.panel2 {
+.col-md-7 education {
+    text-align: left;
+    background-color: white;
+}
+
+ol {
+    text-align: left;
+
+/*.panel2 {
     flex-direction: column;
+}*/
 }
 }
