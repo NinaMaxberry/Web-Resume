@@ -79,40 +79,43 @@ ol {
     margin-top: 3rem;
 }
 
-table {
-    width: 100%;
-    /*justify-content: center;*/
-    margin: auto;
+.professional {
+    text-align: left;
+    padding-bottom: 4px;
 }
 
+.table {
+    width: 100%;
+    margin: auto;
+    
+}
+
+.table,
 td,
 th {
-    border: 1px solid black;
-    /*text-align: left;*/
+    border: 1px solid black; 
+    text-align: left;
 }
 
 tr:nth-child(odd) {
     background-color: #EFDECD;
 }
 
-.btn btn-default {
+.btn-default a {
     color: black;
     background-color: #EFDECD;
-    border-color: black;
-   /* background-color: #EFDECD;*/
-    /*.btn-primary{color:#fff;background-color:teal;border-color:#005a5a}*/
+    border: 2px solid black;
+    padding: 4px 4px;
 }
 
 .button-wrap {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     width: 100%;
     margin-top: 1rem;
+    padding-bottom: 1rem;
 }
-
 .funline {
     display: flex;
     font-size: 1rem;
@@ -129,9 +132,15 @@ tr:nth-child(odd) {
 /*   MEDIA QUERIES  */
 
 @media (max-width: 765px) {
-    .panel {
-        background-color: #EFDECD;
-    }
+
+.panel,
+.education,
+.elevator {
+    background-color: #EFDECD;
+    font-size: 1.2rem;
+}
+
+
 }
 
 
@@ -140,7 +149,12 @@ tr:nth-child(odd) {
 .container-fluid {
     height: auto;
 }
-   
+
+.panel,
+.education,
+.elevator {
+    font-size: 1.5rem;
+}
 .elevator {
     flex-direction: row;
     font-size: 1rem;
